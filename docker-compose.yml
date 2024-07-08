@@ -6,9 +6,9 @@ services:
     stop_signal: SIGINT
     build:
       context: .
-    working_dir: "/usr/src/app/bot"
+    working_dir: "/app/bot"
     volumes:
-      - .:/usr/src/app/bot
+      - .:/app/bot
     command: python3 -m setup
     restart: always
     env_file:
@@ -21,7 +21,7 @@ services:
         max-file: "10"
 
   pg_database:
-    image: postgres:13-alpine
+    image: postgres
     ports:
       - "5439:5432"
     restart: always
