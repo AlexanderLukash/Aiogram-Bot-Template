@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aiogram-bot-template"
+version = "1.0"
+description = "This is template for telegram bots by aiogram."
+authors = ["Lukash <sashass20062727@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.10.0"
+betterlogging = "^1.0.0"
+environs = "^11.0.0"
+tortoise-orm = { extras = ["asyncpg"], version = "^0.21.4" }
+
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
