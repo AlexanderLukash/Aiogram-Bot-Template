@@ -18,8 +18,6 @@ class Config:
     ----------
     tg_bot : TgBot
         Holds the settings related to the Telegram Bot.
-    misc : Miscellaneous
-        Holds the values for miscellaneous settings.
     db : Optional[DbConfig]
         Holds the settings specific to the database (default is None).
 

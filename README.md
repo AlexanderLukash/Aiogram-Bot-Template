@@ -14,7 +14,7 @@
    docker-compose up --build
    ```
 
-After these steps, your Dating Telegram Bot WebApp will be available.
+After these steps, your Telegram Bot will be available.
 
 ## Contribute
 
